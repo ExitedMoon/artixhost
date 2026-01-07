@@ -58,15 +58,15 @@ const HeroSection = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Premium{" "}
-            <span className="text-gradient">Game Server</span>
+            Простой{" "}
+            <span className="text-gradient">игровой хостинг</span>
             <br />
-            Hosting Made Simple
+            для себя
           </h1>
 
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Launch your game server in seconds with our ultra-fast, reliable hosting. 
-            Perfect for Minecraft, Terraria, and Project Zomboid.
+            Запустите свой игровой сервер за секунды с нашим быстрым и надёжным хостингом.
+            Идеально для Minecraft, Terraria и Project Zomboid.
           </p>
 
           {/* CTA Buttons */}
