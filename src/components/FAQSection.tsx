@@ -31,8 +31,8 @@ const faqs = [
     answer: "Absolutely! 🛡️ We implement DDoS protection, automated backups, and encrypted connections. Your game data is safe with enterprise-grade security measures.",
   },
   {
-    question: "📞 How can I get support?",
-    answer: "Our support team is available 24/7! 🌙 You can reach us via Discord, email, or our ticket system. Average response time is under 15 minutes! ⏱️",
+    question: "💬 How can I get support?",
+    answer: "Join our Discord community for 24/7 support! 🌙 Our team and community members are always ready to help. Average response time is under 15 minutes! ⏱️ Just head to our Discord server and open a ticket!",
   },
   {
     question: "🔄 Can I upgrade my plan later?",
