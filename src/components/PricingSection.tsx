@@ -100,10 +100,13 @@ const PricingSection = () => {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple, Transparent <span className="text-gradient">Pricing</span>
+            Простые и прозрачные <span className="text-gradient">цены</span>
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Choose the perfect plan for your gaming needs. All plans include 24/7 support.
+          <p className="text-muted-foreground max-w-xl mx-auto mb-3">
+            Выберите идеальный тариф для ваших нужд. Все планы включают поддержку 24/7.
+          </p>
+          <p className="text-sm text-primary font-medium">
+            💳 Принимаем оплату в криптовалюте
           </p>
         </div>
 
