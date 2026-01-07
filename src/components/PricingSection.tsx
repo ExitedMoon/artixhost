@@ -1,16 +1,16 @@
-import { Check, Cpu, HardDrive, Database, Network, Archive } from "lucide-react";
+import { Cpu, HardDrive, Database, Network, Archive } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const plans = [
   {
-    name: "Starter",
-    price: "$3.99",
+    name: "Free",
+    price: "$0",
     cpu: "1 Core",
-    ram: "2 GB",
-    ssd: "10 GB",
+    ram: "1 GB",
+    ssd: "5 GB",
     ports: "1",
-    database: "1",
-    backup: "1",
+    database: "0",
+    backup: "0",
     popular: false,
   },
   {
@@ -169,7 +169,7 @@ const PricingSection = () => {
                 variant={plan.popular ? "glass" : "outline"} 
                 className="w-full rounded-xl"
               >
-                Get Started
+                {plan.price === "$0" ? "Start Free" : "Get Started"}
               </Button>
             </div>
           ))}
