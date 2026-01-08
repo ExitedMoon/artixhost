@@ -1,5 +1,6 @@
 import { Cpu, HardDrive, Database, Network, Archive } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const plans = [
   {
@@ -100,13 +101,13 @@ const PricingSection = () => {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Простые и прозрачные <span className="text-gradient">цены</span>
+            Simple & Transparent <span className="text-gradient">Pricing</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-3">
-            Выберите идеальный тариф для ваших нужд. Все планы включают поддержку 24/7.
+            Choose the perfect plan for your needs. All plans include 24/7 support.
           </p>
           <p className="text-sm text-primary font-medium">
-            💳 Принимаем оплату в криптовалюте
+            💳 We accept cryptocurrency payments
           </p>
         </div>
 
@@ -168,12 +169,14 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <Button 
-                variant={plan.popular ? "glass" : "outline"} 
-                className="w-full rounded-xl"
-              >
-                {plan.price === "$0" ? "Start Free" : "Get Started"}
-              </Button>
+              <Link to="/dashboard">
+                <Button 
+                  variant={plan.popular ? "glass" : "outline"} 
+                  className="w-full rounded-xl"
+                >
+                  {plan.price === "$0" ? "Start Free" : "Get Started"}
+                </Button>
+              </Link>
             </div>
           ))}
         </div>

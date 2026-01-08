@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Gamepad2, Users, Server } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const stats = [
   { icon: Users, label: "Active Users", value: "12,500+" },
@@ -32,6 +33,10 @@ const HeroSection = () => {
   const currentStat = stats[currentStatIndex];
   const StatIcon = currentStat.icon;
 
+  const scrollToPricing = () => {
+    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section 
       className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden"
@@ -58,28 +63,34 @@ const HeroSection = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Простой{" "}
-            <span className="text-gradient">игровой хостинг</span>
+            Simple{" "}
+            <span className="text-gradient">game hosting</span>
             <br />
-            для себя
+            for yourself
           </h1>
 
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Запустите свой игровой сервер за секунды с нашим быстрым и надёжным хостингом.
-            Идеально для Minecraft, Terraria и Project Zomboid.
+            Launch your game server in seconds with our fast and reliable hosting.
+            Perfect for Minecraft, Terraria, and Project Zomboid.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="glass" size="lg" className="rounded-xl text-lg px-8">
-              <Gamepad2 className="mr-2 h-5 w-5" />
-              Start Your Server
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-xl text-lg px-8 border-primary/30 hover:bg-primary/10">
+            <Link to="/dashboard">
+              <Button variant="glass" size="lg" className="rounded-xl text-lg px-8">
+                <Gamepad2 className="mr-2 h-5 w-5" />
+                Start Your Server
+              </Button>
+            </Link>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="rounded-xl text-lg px-8 border-primary/30 hover:bg-primary/10"
+              onClick={scrollToPricing}
+            >
               View Pricing
             </Button>
           </div>
-
           {/* Animated Stats */}
           <div className="glass-card !p-8 max-w-md mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div 
