@@ -49,19 +49,6 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 py-20">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Games badges */}
-          <div className="flex justify-center gap-3 mb-8 animate-fade-up">
-            {games.map((game) => (
-              <div 
-                key={game.name}
-                className="glass-card !p-3 !rounded-xl flex items-center gap-2"
-              >
-                <span className="text-xl">{game.icon}</span>
-                <span className="font-medium text-foreground">{game.name}</span>
-              </div>
-            ))}
-          </div>
-
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Simple{" "}
