@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const stats = [
   { icon: Users, label: "Active Users", value: "12,500+" },
   { icon: Server, label: "Servers Created", value: "45,000+" },
+  { icon: Server, label: "Active Nodes", value: "2" },
 ];
 
 const games = [
