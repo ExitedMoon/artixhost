@@ -126,7 +126,6 @@
     background: hsl(var(--glass-bg));
     backdrop-filter: blur(16px);
     border: 1px solid hsl(var(--glass-border));
-    box-shadow: var(--glass-shadow);
   }
 
   .glass-card:hover {
