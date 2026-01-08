@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Artix Hosting" className="h-6 w-6" />
+            <img src={logo} alt="Artix Hosting" className="h-10 w-10" />
             <span className="text-lg font-bold text-foreground">Artix Hosting </span>
           </div>
           
