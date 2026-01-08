@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           
           <p className="text-sm text-muted-foreground">
-            © 2024 artix.host. All rights reserved.
+            © 2026 artix.host. All rights reserved.
           </p>
         </div>
       </div>
