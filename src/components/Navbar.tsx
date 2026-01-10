@@ -24,16 +24,16 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link to="/dashboard">
+            <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="rounded-xl font-medium">
                 Sign In
               </Button>
-            </Link>
-            <Link to="/dashboard">
+            </a>
+            <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
               <Button variant="glass" className="rounded-xl">
                 Get Started
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

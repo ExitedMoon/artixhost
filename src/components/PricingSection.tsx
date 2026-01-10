@@ -169,14 +169,14 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <Link to="/dashboard">
+              <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
                 <Button 
                   variant={plan.popular ? "glass" : "outline"} 
                   className="w-full rounded-xl"
                 >
                   {plan.price === "$0" ? "Start Free" : "Get Started"}
                 </Button>
-              </Link>
+              </a>
             </div>
           ))}
         </div>

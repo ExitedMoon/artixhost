@@ -64,12 +64,12 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Link to="/dashboard">
+            <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
               <Button variant="glass" size="lg" className="rounded-xl text-lg px-8">
                 <Gamepad2 className="mr-2 h-5 w-5" />
                 Start Your Server
               </Button>
-            </Link>
+            </a>
             <Button 
               variant="outline" 
               size="lg" 
