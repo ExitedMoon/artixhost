@@ -1,20 +1,13 @@
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
-  return <footer className="py-12 border-t border-border">
+  return (
+    <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col items-center gap-6">
           <div className="flex items-center gap-2">
             <img src={logo} alt="Artix Hosting" className="h-10 w-10" />
-            <span className="text-lg font-bold text-foreground">Artix Hosting </span>
-          </div>
-          
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="https://discord.gg/lovable-dev" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-1">
-              💬 Discord
-            </a>
+            <span className="text-lg font-bold text-foreground">Artix Hosting</span>
           </div>
           
           <p className="text-sm text-muted-foreground">
@@ -22,6 +15,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
