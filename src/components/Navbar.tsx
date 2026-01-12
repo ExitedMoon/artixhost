@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
+            <a href="https://my.artix.host/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" className="rounded-xl font-medium">
                 Sign In
               </Button>
