@@ -61,7 +61,7 @@ const gamingPlans = [
   {
     name: "Business",
     price: "€11.99",
-    cpu: "3.5 Cores",
+    cpu: "4 Cores",
     ram: "12 GB",
     ssd: "90 GB",
     ports: "6",
@@ -72,7 +72,7 @@ const gamingPlans = [
   {
     name: "Enterprise",
     price: "€15.99",
-    cpu: "4 Cores",
+    cpu: "6 Cores",
     ram: "16 GB",
     ssd: "100 GB",
     ports: "8",
@@ -83,7 +83,7 @@ const gamingPlans = [
   {
     name: "Ultimate",
     price: "€19.99",
-    cpu: "5 Cores",
+    cpu: "8 Cores",
     ram: "24 GB",
     ssd: "120 GB",
     ports: "10",
