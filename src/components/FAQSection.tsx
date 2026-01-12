@@ -7,36 +7,36 @@ import {
 
 const faqs = [
   {
-    question: "🌍 Where are your servers located?",
+    question: "Where are your servers located?",
     answer: "Our servers are strategically located in Germany 🇩🇪 and Finland 🇫🇮 to provide excellent latency for European players. We use enterprise-grade hardware in Tier-3 data centers with 99.9% uptime guarantee.",
   },
   {
-    question: "🎮 Which games do you support?",
-    answer: "We currently support Minecraft ⛏️, Terraria 🌳, and Project Zomboid 🧟. Each game has optimized server configurations for the best performance. More games coming soon! 🚀",
+    question: "Which games do you support?",
+    answer: "We currently support Minecraft, Terraria, and Project Zomboid. Each game has optimized server configurations for the best performance. More games coming soon!",
   },
   {
-    question: "🖥️ What control panel do you use?",
-    answer: "We use Pterodactyl Panel 🦖 – an industry-leading open-source game server management platform. It provides a beautiful, intuitive interface for managing your servers, files, databases, and more! ✨",
+    question: "What control panel do you use?",
+    answer: "We use Pterodactyl Panel – an industry-leading open-source game server management platform. It provides a beautiful, intuitive interface for managing your servers, files, databases, and more!",
   },
   {
-    question: "⚡ How fast is server deployment?",
-    answer: "Your server is ready in under 60 seconds! 🎉 After payment, your game server is automatically provisioned and configured. Just click play! 🎮",
+    question: "How fast is server deployment?",
+    answer: "Your server is ready in under 60 seconds! After payment, your game server is automatically provisioned and configured. Just click play!",
   },
   {
-    question: "💳 What payment methods do you accept?",
-    answer: "We accept all major credit cards 💳, PayPal, and various cryptocurrency options 🪙. All payments are secure and processed through trusted payment providers.",
+    question: "What payment methods do you accept?",
+    answer: "We accept all major credit cards, PayPal, and various cryptocurrency options. All payments are secure and processed through trusted payment providers.",
   },
   {
-    question: "🔒 Is my data secure?",
-    answer: "Absolutely! 🛡️ We implement DDoS protection, automated backups, and encrypted connections. Your game data is safe with enterprise-grade security measures.",
+    question: "Is my data secure?",
+    answer: "Absolutely! We implement DDoS protection, automated backups, and encrypted connections. Your game data is safe with enterprise-grade security measures.",
   },
   {
-    question: "💬 How can I get support?",
-    answer: "Join our Discord community for 24/7 support! 🌙 Our team and community members are always ready to help. Average response time is under 15 minutes! ⏱️ Just head to our Discord server and open a ticket!",
+    question: "How can I get support?",
+    answer: "Join our Discord community for 24/7 support! Our team and community members are always ready to help. Average response time is under 15 minutes! Just head to our Discord server and open a ticket!",
   },
   {
-    question: "🔄 Can I upgrade my plan later?",
-    answer: "Yes! 👍 You can upgrade or downgrade your plan anytime from your dashboard. Changes take effect immediately, and we'll prorate your billing accordingly. 📊",
+    question: "Can I upgrade my plan later?",
+    answer: "Yes! You can upgrade or downgrade your plan anytime from your dashboard. Changes take effect immediately, and we'll prorate your billing accordingly.",
   },
 ];
 
