@@ -93,32 +93,7 @@ const gamingPlans = [
   }
 ];
 
-const voicePlans = [
-  {
-    name: "Starter",
-    price: "€1.99",
-    slots: "25",
-    quality: "128 kbps",
-    channels: "10",
-    popular: false
-  },
-  {
-    name: "Standard",
-    price: "€3.99",
-    slots: "50",
-    quality: "256 kbps",
-    channels: "25",
-    popular: true
-  },
-  {
-    name: "Premium",
-    price: "€6.99",
-    slots: "100",
-    quality: "320 kbps",
-    channels: "Unlimited",
-    popular: false
-  }
-];
+// Voice servers are custom only - no predefined plans
 
 type ServerType = "gaming" | "voice";
 
@@ -235,61 +210,54 @@ const PricingSection = () => {
               ))}
             </div>
           ) : (
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-xl mx-auto">
               <div className="text-center mb-6">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                   <Mic className="h-4 w-4" />
                   Supports TeamSpeak 3 & TeamSpeak 6
                 </span>
               </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                {voicePlans.map((plan, index) => (
-                  <div
-                    key={plan.name}
-                    className={`glass-card relative animate-fade-up ${plan.popular ? "ring-2 ring-primary" : ""}`}
-                    style={{ animationDelay: `${index * 0.05}s` }}
-                  >
-                    {plan.popular && (
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <span className="bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
-                          POPULAR
-                        </span>
-                      </div>
-                    )}
+              <div className="glass-card relative animate-fade-up ring-2 ring-primary">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
+                    CUSTOM
+                  </span>
+                </div>
 
-                    <div className="text-center mb-5">
-                      <h3 className="text-lg font-bold text-foreground mb-2">{plan.name}</h3>
-                      <div className="flex items-baseline justify-center gap-1">
-                        <span className="text-3xl font-extrabold text-foreground">{plan.price}</span>
-                        <span className="text-muted-foreground">/mo</span>
-                      </div>
-                    </div>
-
-                    <div className="space-y-3 mb-6">
-                      <div className="flex items-center gap-3 text-sm">
-                        <Users className="h-4 w-4 text-primary flex-shrink-0" />
-                        <span className="text-muted-foreground">Slots:</span>
-                        <span className="font-medium text-foreground ml-auto">{plan.slots}</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <Mic className="h-4 w-4 text-primary flex-shrink-0" />
-                        <span className="text-muted-foreground">Quality:</span>
-                        <span className="font-medium text-foreground ml-auto">{plan.quality}</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-sm">
-                        <Network className="h-4 w-4 text-primary flex-shrink-0" />
-                        <span className="text-muted-foreground">Channels:</span>
-                        <span className="font-medium text-foreground ml-auto">{plan.channels}</span>
-                      </div>
-                    </div>
-
-                    <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
-                      <Button variant={plan.popular ? "glass" : "outline"} className="w-full rounded-xl">
-                        Get Started
-                      </Button>
-                    </a>
+                <div className="text-center mb-5">
+                  <h3 className="text-lg font-bold text-foreground mb-2">Custom</h3>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-3xl font-extrabold text-foreground">Contact Us</span>
                   </div>
-                ))}
+                </div>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center gap-3 text-sm">
+                    <Users className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Slots:</span>
+                    <span className="font-medium text-foreground ml-auto">Custom</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <Mic className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Quality:</span>
+                    <span className="font-medium text-foreground ml-auto">Up to 320 kbps</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <Network className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">Channels:</span>
+                    <span className="font-medium text-foreground ml-auto">Unlimited</span>
+                  </div>
+                </div>
+
+                <p className="text-center text-muted-foreground text-sm mb-6">
+                  Need a voice server? Contact us via Discord and we'll create a custom plan tailored to your needs.
+                </p>
+
+                <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="glass" className="w-full rounded-xl">
+                    Contact via Discord
+                  </Button>
+                </a>
               </div>
             </div>
           )}
