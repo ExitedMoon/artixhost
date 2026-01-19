@@ -24,7 +24,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-20">
         <div className="text-left max-w-4xl mx-auto">
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s", fontFamily: "'Unbounded', sans-serif" }}>
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Simple{" "}
             <span className="text-gradient">game hosting</span>
             <br />
