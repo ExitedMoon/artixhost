@@ -1,39 +1,13 @@
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Gamepad2, Users, Server } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const stats = [
-  { icon: Users, label: "Active Users", value: "12,500+" },
-  { icon: Server, label: "Servers Created", value: "45,000+" },
+  { icon: Users, label: "Active Users", value: "10+" },
+  { icon: Server, label: "Servers Created", value: "15+" },
   { icon: Server, label: "Active Nodes", value: "2" },
 ];
 
-const games = [
-  { name: "Minecraft", icon: "⛏️" },
-  { name: "Terraria", icon: "🌳" },
-  { name: "Project Zomboid", icon: "🧟" },
-];
-
 const HeroSection = () => {
-  const [currentStatIndex, setCurrentStatIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setCurrentStatIndex((prev) => (prev + 1) % stats.length);
-        setIsAnimating(false);
-      }, 300);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const currentStat = stats[currentStatIndex];
-  const StatIcon = currentStat.icon;
-
   const scrollToPricing = () => {
     document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -48,22 +22,22 @@ const HeroSection = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 py-20">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-left max-w-4xl mx-auto">
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-up" style={{ animationDelay: "0.1s", fontFamily: "'Unbounded', sans-serif" }}>
             Simple{" "}
             <span className="text-gradient">game hosting</span>
             <br />
             for yourself
           </h1>
 
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-xl text-muted-foreground mb-10 max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Launch your game server in seconds with our fast and reliable hosting.
             Perfect for Minecraft, Terraria, and Project Zomboid.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <a href="https://dsc.gg/artixhost/" target="_blank" rel="noopener noreferrer">
               <Button variant="glass" size="lg" className="rounded-xl text-lg px-8">
                 <Gamepad2 className="mr-2 h-5 w-5" />
@@ -79,31 +53,23 @@ const HeroSection = () => {
               View Pricing
             </Button>
           </div>
-          {/* Animated Stats */}
-          <div className="glass-card !p-8 max-w-md mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <div 
-              className={`flex flex-col items-center transition-all duration-300 ${
-                isAnimating ? "opacity-0 transform scale-95" : "opacity-100 transform scale-100"
-              }`}
-            >
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
-                <StatIcon className="h-8 w-8 text-primary" />
-              </div>
-              <span className="text-4xl font-bold text-foreground mb-1">{currentStat.value}</span>
-              <span className="text-muted-foreground font-medium">{currentStat.label}</span>
-            </div>
-            
-            {/* Dots indicator */}
-            <div className="flex justify-center gap-2 mt-6">
-              {stats.map((_, index) => (
-                <div
-                  key={index}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentStatIndex ? "bg-primary w-6" : "bg-muted-foreground/30"
-                  }`}
-                />
-              ))}
-            </div>
+
+          {/* Stats in line */}
+          <div className="flex flex-wrap justify-center gap-12 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+            {stats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <div key={index} className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-bold text-foreground block">{stat.value}</span>
+                    <span className="text-muted-foreground text-sm">{stat.label}</span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
