@@ -6,10 +6,10 @@ const gamingPlans = [
   {
     name: "Free",
     price: "€0",
-    cpu: "0.5 Core",
+    cpu: "0.5 vCore",
     ram: "1 GB",
     ssd: "5 GB",
-    ports: "1",
+    ports: "2",
     database: "0",
     backup: "0",
     popular: false
@@ -17,10 +17,10 @@ const gamingPlans = [
   {
     name: "Basic",
     price: "€2.99",
-    cpu: "1 Core",
+    cpu: "1 vCore",
     ram: "3 GB",
     ssd: "15 GB",
-    ports: "2",
+    ports: "3",
     database: "1",
     backup: "1",
     popular: false
@@ -28,10 +28,10 @@ const gamingPlans = [
   {
     name: "Standard",
     price: "€3.99",
-    cpu: "2 Cores",
+    cpu: "2 vCores",
     ram: "4 GB",
     ssd: "35 GB",
-    ports: "3",
+    ports: "4",
     database: "2",
     backup: "3",
     popular: true
@@ -39,10 +39,10 @@ const gamingPlans = [
   {
     name: "Advanced",
     price: "€7.99",
-    cpu: "2.5 Cores",
+    cpu: "2.5 vCores",
     ram: "8 GB",
     ssd: "60 GB",
-    ports: "4",
+    ports: "5",
     database: "3",
     backup: "5",
     popular: false
@@ -50,10 +50,10 @@ const gamingPlans = [
   {
     name: "Pro",
     price: "€9.99",
-    cpu: "3 Cores",
+    cpu: "3 vCores",
     ram: "10 GB",
     ssd: "70 GB",
-    ports: "5",
+    ports: "6",
     database: "4",
     backup: "7",
     popular: false
@@ -61,10 +61,10 @@ const gamingPlans = [
   {
     name: "Business",
     price: "€11.99",
-    cpu: "4 Cores",
+    cpu: "4 vCores",
     ram: "12 GB",
     ssd: "90 GB",
-    ports: "6",
+    ports: "7",
     database: "5",
     backup: "10",
     popular: false
@@ -72,10 +72,10 @@ const gamingPlans = [
   {
     name: "Enterprise",
     price: "€15.99",
-    cpu: "6 Cores",
+    cpu: "6 vCores",
     ram: "16 GB",
     ssd: "100 GB",
-    ports: "8",
+    ports: "9",
     database: "6",
     backup: "15",
     popular: false
@@ -83,10 +83,10 @@ const gamingPlans = [
   {
     name: "Ultimate",
     price: "€19.99",
-    cpu: "8 Cores",
+    cpu: "8 vCores",
     ram: "24 GB",
     ssd: "120 GB",
-    ports: "10",
+    ports: "12",
     database: "8",
     backup: "20",
     popular: false
