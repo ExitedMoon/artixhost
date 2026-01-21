@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
+import TrustpilotBanner from "@/components/TrustpilotBanner";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <BenefitsSection />
       <PricingSection />
       <FAQSection />
+      <TrustpilotBanner />
       <Footer />
     </div>
   );

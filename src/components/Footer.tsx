@@ -15,6 +15,9 @@ const Footer = () => {
             <Link to="/tos" className="hover:text-foreground transition-colors">
               Terms of Service
             </Link>
+            <Link to="/privacy" className="hover:text-foreground transition-colors">
+              Privacy Policy
+            </Link>
             <a href="mailto:abuse@artix.host" className="hover:text-foreground transition-colors">
               abuse@artix.host
             </a>
