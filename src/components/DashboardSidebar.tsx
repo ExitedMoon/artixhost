@@ -39,7 +39,7 @@ const menuItems = [
 
 export function DashboardSidebar() {
   return (
-    <Sidebar className="border-r border-border/50 bg-background/50 backdrop-blur-sm">
+    <Sidebar collapsible="none" className="border-r border-border/50 bg-background/50 backdrop-blur-sm pt-16">
       <SidebarContent className="pt-4">
         <SidebarGroup>
           <SidebarGroupContent>
