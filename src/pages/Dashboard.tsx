@@ -1,38 +1,33 @@
-import { Button } from "@/components/ui/button";
-import { Server, ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { DashboardSidebar } from "@/components/DashboardSidebar";
+import { DashboardHeader } from "@/components/DashboardHeader";
+import { Server } from "lucide-react";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <nav className="glass-navbar fixed top-0 left-0 right-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex h-16 items-center justify-between">
-            <Link to="/" className="flex items-center gap-2">
-              <Server className="h-7 w-7 text-primary" />
-              <span className="text-xl font-bold text-foreground">artix.host</span>
-            </Link>
-          </div>
-        </div>
-      </nav>
-
-      <div className="pt-24 container mx-auto px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="glass-card">
-            <h1 className="text-3xl font-bold mb-4 text-foreground">Dashboard</h1>
-            <p className="text-muted-foreground mb-6">
-              Welcome to your personal account! Server management coming soon.
-            </p>
-            <Link to="/">
-              <Button variant="outline" className="rounded-xl">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Button>
-            </Link>
-          </div>
+    <SidebarProvider>
+      <div className="min-h-screen flex w-full bg-background">
+        <DashboardSidebar />
+        
+        <div className="flex-1 flex flex-col">
+          <DashboardHeader />
+          
+          <main className="flex-1 pt-24 px-6 pb-6">
+            <div className="max-w-6xl mx-auto">
+              <h1 className="text-3xl font-bold mb-6 text-foreground">My Servers</h1>
+              
+              <div className="glass-card p-8 text-center">
+                <Server className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
+                <h2 className="text-xl font-semibold mb-2 text-foreground">No servers yet</h2>
+                <p className="text-muted-foreground">
+                  You don't have any servers. Create your first server to get started!
+                </p>
+              </div>
+            </div>
+          </main>
         </div>
       </div>
-    </div>
+    </SidebarProvider>
   );
 };
 
